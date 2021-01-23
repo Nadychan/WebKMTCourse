@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+    <title>Document</title>
+    <link href="./style/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="./style/style.css" rel="stylesheet">
 </head>
 <body>
-    <button class="modal-open">Open Modal</button>
-    <button class="switch">Disable Modal</button>
-    <!-- <button class="modal-enable">Enable Modal</button> -->
-    <article id="modal">
-        <section class="modal-content">
-            <h2>Hello Modal</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem ... paragraphs. words ... 
-                To take a trivial example, which of us ever undertakes 
-                laborious physical exercise, 
-            </p>
-            <button class="modal-close">Close</button>
-        </section>
-    </article>
-    <script src="./script/tinery.js"></script>
-    <script src="./script/age_control.js"></script>
-    <script src="./script/switch.js"></script>
+
+    <!-- heading -->
+    <header>
+        <nav>
+            <h1>To Do</h1>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <main>
+        <button class="btn create-task">Create Task</button>
+        
+        <!-- Task List -->
+        <ul class="task-list"></ul>
+
+    </main>
+
+    <!-- modal -->
+    <div class="task-modal">
+        <div class="close-modal"></div>
+        <div class="modal-content">
+            <form>
+                <h3>Task Descriptios:</h3>
+                <textarea required></textarea>
+                <button class="btn save-task">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script/todo.js" rel="stylesheetd"></script>
+
 </body>
 </html>
